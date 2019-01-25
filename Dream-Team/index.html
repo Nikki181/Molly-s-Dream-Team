@@ -1,0 +1,1833 @@
+
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+    <title>Print &amp; Event Modeling Recruitment Agency - Molly's Dream Team</title>
+    <style id="critical-path-css" type='text/css'>
+        body, html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0
+        }
+
+        .page-preloader {
+            top: 0;
+            left: 0;
+            z-index: 999;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            text-align: center
+        }
+
+        .preloader-logo, .preloader-preview-area {
+            top: 50%;
+            max-height: calc(50% - 20px);
+            opacity: 1
+        }
+
+        .preloader-preview-area {
+            -webkit-animation-delay: -.2s;
+            animation-delay: -.2s;
+            -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+            transform: translateY(100%);
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+            position: absolute
+        }
+
+        .preloader-logo {
+            max-width: 90%;
+            -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+            margin: -10px auto 0;
+            position: relative
+        }
+
+        .ball-pulse > div, .ball-scale > div, .line-scale > div {
+            margin: 2px;
+            display: inline-block
+        }
+
+        .ball-pulse > div {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            -webkit-animation: ball-pulse .75s infinite cubic-bezier(.2,.68,.18,1.08);
+            animation: ball-pulse .75s infinite cubic-bezier(.2,.68,.18,1.08)
+        }
+
+            .ball-pulse > div:nth-child(1) {
+                -webkit-animation-delay: -.36s;
+                animation-delay: -.36s
+            }
+
+            .ball-pulse > div:nth-child(2) {
+                -webkit-animation-delay: -.24s;
+                animation-delay: -.24s
+            }
+
+            .ball-pulse > div:nth-child(3) {
+                -webkit-animation-delay: -.12s;
+                animation-delay: -.12s
+            }
+
+        @-webkit-keyframes ball-pulse {
+            0%,80% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 1
+            }
+
+            45% {
+                -webkit-transform: scale(.1);
+                transform: scale(.1);
+                opacity: .7
+            }
+        }
+
+        @keyframes ball-pulse {
+            0%,80% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 1
+            }
+
+            45% {
+                -webkit-transform: scale(.1);
+                transform: scale(.1);
+                opacity: .7
+            }
+        }
+
+        .ball-clip-rotate-pulse {
+            position: relative;
+            -webkit-transform: translateY(-15px);
+            -ms-transform: translateY(-15px);
+            transform: translateY(-15px);
+            display: inline-block
+        }
+
+            .ball-clip-rotate-pulse > div {
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 100%
+            }
+
+                .ball-clip-rotate-pulse > div:first-child {
+                    height: 36px;
+                    width: 36px;
+                    top: 7px;
+                    left: -7px;
+                    -webkit-animation: ball-clip-rotate-pulse-scale 1s 0s cubic-bezier(.09,.57,.49,.9) infinite;
+                    animation: ball-clip-rotate-pulse-scale 1s 0s cubic-bezier(.09,.57,.49,.9) infinite
+                }
+
+                .ball-clip-rotate-pulse > div:last-child {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    left: -16px;
+                    top: -2px;
+                    background: 0 0;
+                    border: 2px solid;
+                    -webkit-animation: ball-clip-rotate-pulse-rotate 1s 0s cubic-bezier(.09,.57,.49,.9) infinite;
+                    animation: ball-clip-rotate-pulse-rotate 1s 0s cubic-bezier(.09,.57,.49,.9) infinite;
+                    -webkit-animation-duration: 1s;
+                    animation-duration: 1s
+                }
+
+        @-webkit-keyframes ball-clip-rotate-pulse-rotate {
+            0% {
+                -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1)
+            }
+
+            50% {
+                -webkit-transform: rotate(180deg) scale(.6);
+                transform: rotate(180deg) scale(.6)
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg) scale(1);
+                transform: rotate(360deg) scale(1)
+            }
+        }
+
+        @keyframes ball-clip-rotate-pulse-rotate {
+            0% {
+                -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1)
+            }
+
+            50% {
+                -webkit-transform: rotate(180deg) scale(.6);
+                transform: rotate(180deg) scale(.6)
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg) scale(1);
+                transform: rotate(360deg) scale(1)
+            }
+        }
+
+        @-webkit-keyframes ball-clip-rotate-pulse-scale {
+            30% {
+                -webkit-transform: scale(.3);
+                transform: scale(.3)
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @keyframes ball-clip-rotate-pulse-scale {
+            30% {
+                -webkit-transform: scale(.3);
+                transform: scale(.3)
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @-webkit-keyframes square-spin {
+            25% {
+                -webkit-transform: perspective(100px) rotateX(180deg) rotateY(0);
+                transform: perspective(100px) rotateX(180deg) rotateY(0)
+            }
+
+            50% {
+                -webkit-transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+                transform: perspective(100px) rotateX(180deg) rotateY(180deg)
+            }
+
+            75% {
+                -webkit-transform: perspective(100px) rotateX(0) rotateY(180deg);
+                transform: perspective(100px) rotateX(0) rotateY(180deg)
+            }
+
+            100% {
+                -webkit-transform: perspective(100px) rotateX(0) rotateY(0);
+                transform: perspective(100px) rotateX(0) rotateY(0)
+            }
+        }
+
+        @keyframes square-spin {
+            25% {
+                -webkit-transform: perspective(100px) rotateX(180deg) rotateY(0);
+                transform: perspective(100px) rotateX(180deg) rotateY(0)
+            }
+
+            50% {
+                -webkit-transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+                transform: perspective(100px) rotateX(180deg) rotateY(180deg)
+            }
+
+            75% {
+                -webkit-transform: perspective(100px) rotateX(0) rotateY(180deg);
+                transform: perspective(100px) rotateX(0) rotateY(180deg)
+            }
+
+            100% {
+                -webkit-transform: perspective(100px) rotateX(0) rotateY(0);
+                transform: perspective(100px) rotateX(0) rotateY(0)
+            }
+        }
+
+        .square-spin {
+            display: inline-block
+        }
+
+            .square-spin > div {
+                width: 50px;
+                height: 50px;
+                -webkit-animation: square-spin 3s 0s cubic-bezier(.09,.57,.49,.9) infinite;
+                animation: square-spin 3s 0s cubic-bezier(.09,.57,.49,.9) infinite
+            }
+
+        .cube-transition {
+            position: relative;
+            -webkit-transform: translate(-25px,-25px);
+            -ms-transform: translate(-25px,-25px);
+            transform: translate(-25px,-25px);
+            display: inline-block
+        }
+
+            .cube-transition > div {
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: -5px;
+                left: -5px;
+                -webkit-animation: cube-transition 1.6s 0s infinite ease-in-out;
+                animation: cube-transition 1.6s 0s infinite ease-in-out
+            }
+
+                .cube-transition > div:last-child {
+                    -webkit-animation-delay: -.8s;
+                    animation-delay: -.8s
+                }
+
+        @-webkit-keyframes cube-transition {
+            25% {
+                -webkit-transform: translateX(50px) scale(.5) rotate(-90deg);
+                transform: translateX(50px) scale(.5) rotate(-90deg)
+            }
+
+            50% {
+                -webkit-transform: translate(50px,50px) rotate(-180deg);
+                transform: translate(50px,50px) rotate(-180deg)
+            }
+
+            75% {
+                -webkit-transform: translateY(50px) scale(.5) rotate(-270deg);
+                transform: translateY(50px) scale(.5) rotate(-270deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg)
+            }
+        }
+
+        @keyframes cube-transition {
+            25% {
+                -webkit-transform: translateX(50px) scale(.5) rotate(-90deg);
+                transform: translateX(50px) scale(.5) rotate(-90deg)
+            }
+
+            50% {
+                -webkit-transform: translate(50px,50px) rotate(-180deg);
+                transform: translate(50px,50px) rotate(-180deg)
+            }
+
+            75% {
+                -webkit-transform: translateY(50px) scale(.5) rotate(-270deg);
+                transform: translateY(50px) scale(.5) rotate(-270deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg)
+            }
+        }
+
+        .ball-scale > div {
+            border-radius: 100%;
+            height: 60px;
+            width: 60px;
+            -webkit-animation: ball-scale 1s 0s ease-in-out infinite;
+            animation: ball-scale 1s 0s ease-in-out infinite
+        }
+
+        @-webkit-keyframes ball-scale {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0)
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 0
+            }
+        }
+
+        @keyframes ball-scale {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0)
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 0
+            }
+        }
+
+        .line-scale > div {
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            width: 5px;
+            height: 50px;
+            border-radius: 2px
+        }
+
+            .line-scale > div:nth-child(1) {
+                -webkit-animation: line-scale 1s -.5s infinite cubic-bezier(.2,.68,.18,1.08);
+                animation: line-scale 1s -.5s infinite cubic-bezier(.2,.68,.18,1.08)
+            }
+
+            .line-scale > div:nth-child(2) {
+                -webkit-animation: line-scale 1s -.4s infinite cubic-bezier(.2,.68,.18,1.08);
+                animation: line-scale 1s -.4s infinite cubic-bezier(.2,.68,.18,1.08)
+            }
+
+            .line-scale > div:nth-child(3) {
+                -webkit-animation: line-scale 1s -.3s infinite cubic-bezier(.2,.68,.18,1.08);
+                animation: line-scale 1s -.3s infinite cubic-bezier(.2,.68,.18,1.08)
+            }
+
+            .line-scale > div:nth-child(4) {
+                -webkit-animation: line-scale 1s -.2s infinite cubic-bezier(.2,.68,.18,1.08);
+                animation: line-scale 1s -.2s infinite cubic-bezier(.2,.68,.18,1.08)
+            }
+
+            .line-scale > div:nth-child(5) {
+                -webkit-animation: line-scale 1s -.1s infinite cubic-bezier(.2,.68,.18,1.08);
+                animation: line-scale 1s -.1s infinite cubic-bezier(.2,.68,.18,1.08)
+            }
+
+        @-webkit-keyframes line-scale {
+            0%,100% {
+                -webkit-transform: scaley(1);
+                transform: scaley(1)
+            }
+
+            50% {
+                -webkit-transform: scaley(.4);
+                transform: scaley(.4)
+            }
+        }
+
+        @keyframes line-scale {
+            0%,100% {
+                -webkit-transform: scaley(1);
+                transform: scaley(1)
+            }
+
+            50% {
+                -webkit-transform: scaley(.4);
+                transform: scaley(.4)
+            }
+        }
+
+        .ball-scale-multiple {
+            position: relative;
+            -webkit-transform: translateY(30px);
+            -ms-transform: translateY(30px);
+            transform: translateY(30px);
+            display: inline-block
+        }
+
+            .ball-scale-multiple > div {
+                border-radius: 100%;
+                position: absolute;
+                left: -30px;
+                top: 0;
+                opacity: 0;
+                margin: 0;
+                width: 50px;
+                height: 50px;
+                -webkit-animation: ball-scale-multiple 1s 0s linear infinite;
+                animation: ball-scale-multiple 1s 0s linear infinite
+            }
+
+                .ball-scale-multiple > div:nth-child(2), .ball-scale-multiple > div:nth-child(3) {
+                    -webkit-animation-delay: -.2s;
+                    animation-delay: -.2s
+                }
+
+        @-webkit-keyframes ball-scale-multiple {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                opacity: 0
+            }
+
+            5% {
+                opacity: 1
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 0
+            }
+        }
+
+        @keyframes ball-scale-multiple {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                opacity: 0
+            }
+
+            5% {
+                opacity: 1
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 0
+            }
+        }
+
+        .ball-pulse-sync {
+            display: inline-block
+        }
+
+            .ball-pulse-sync > div {
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                margin: 2px;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                display: inline-block
+            }
+
+                .ball-pulse-sync > div:nth-child(1) {
+                    -webkit-animation: ball-pulse-sync .6s -.21s infinite ease-in-out;
+                    animation: ball-pulse-sync .6s -.21s infinite ease-in-out
+                }
+
+                .ball-pulse-sync > div:nth-child(2) {
+                    -webkit-animation: ball-pulse-sync .6s -.14s infinite ease-in-out;
+                    animation: ball-pulse-sync .6s -.14s infinite ease-in-out
+                }
+
+                .ball-pulse-sync > div:nth-child(3) {
+                    -webkit-animation: ball-pulse-sync .6s -70ms infinite ease-in-out;
+                    animation: ball-pulse-sync .6s -70ms infinite ease-in-out
+                }
+
+        @-webkit-keyframes ball-pulse-sync {
+            33% {
+                -webkit-transform: translateY(10px);
+                transform: translateY(10px)
+            }
+
+            66% {
+                -webkit-transform: translateY(-10px);
+                transform: translateY(-10px)
+            }
+
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes ball-pulse-sync {
+            33% {
+                -webkit-transform: translateY(10px);
+                transform: translateY(10px)
+            }
+
+            66% {
+                -webkit-transform: translateY(-10px);
+                transform: translateY(-10px)
+            }
+
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0)
+            }
+        }
+
+        .transparent-circle {
+            display: inline-block;
+            border-top: .5em solid rgba(255,255,255,.2);
+            border-right: .5em solid rgba(255,255,255,.2);
+            border-bottom: .5em solid rgba(255,255,255,.2);
+            border-left: .5em solid #fff;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: transparent-circle 1.1s infinite linear;
+            animation: transparent-circle 1.1s infinite linear;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%
+        }
+
+            .transparent-circle:after {
+                border-radius: 50%;
+                width: 10em;
+                height: 10em
+            }
+
+        @-webkit-keyframes transparent-circle {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes transparent-circle {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        .ball-spin-fade-loader {
+            position: relative;
+            top: -10px;
+            left: -10px;
+            display: inline-block
+        }
+
+            .ball-spin-fade-loader > div {
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                margin: 2px;
+                position: absolute;
+                -webkit-animation: ball-spin-fade-loader 1s infinite linear;
+                animation: ball-spin-fade-loader 1s infinite linear
+            }
+
+                .ball-spin-fade-loader > div:nth-child(1) {
+                    top: 25px;
+                    left: 0;
+                    animation-delay: -.84s;
+                    -webkit-animation-delay: -.84s
+                }
+
+                .ball-spin-fade-loader > div:nth-child(2) {
+                    top: 17.05px;
+                    left: 17.05px;
+                    animation-delay: -.72s;
+                    -webkit-animation-delay: -.72s
+                }
+
+                .ball-spin-fade-loader > div:nth-child(3) {
+                    top: 0;
+                    left: 25px;
+                    animation-delay: -.6s;
+                    -webkit-animation-delay: -.6s
+                }
+
+                .ball-spin-fade-loader > div:nth-child(4) {
+                    top: -17.05px;
+                    left: 17.05px;
+                    animation-delay: -.48s;
+                    -webkit-animation-delay: -.48s
+                }
+
+                .ball-spin-fade-loader > div:nth-child(5) {
+                    top: -25px;
+                    left: 0;
+                    animation-delay: -.36s;
+                    -webkit-animation-delay: -.36s
+                }
+
+                .ball-spin-fade-loader > div:nth-child(6) {
+                    top: -17.05px;
+                    left: -17.05px;
+                    animation-delay: -.24s;
+                    -webkit-animation-delay: -.24s
+                }
+
+                .ball-spin-fade-loader > div:nth-child(7) {
+                    top: 0;
+                    left: -25px;
+                    animation-delay: -.12s;
+                    -webkit-animation-delay: -.12s
+                }
+
+                .ball-spin-fade-loader > div:nth-child(8) {
+                    top: 17.05px;
+                    left: -17.05px;
+                    animation-delay: 0s;
+                    -webkit-animation-delay: 0s
+                }
+
+        @-webkit-keyframes ball-spin-fade-loader {
+            50% {
+                opacity: .3;
+                -webkit-transform: scale(.4);
+                transform: scale(.4)
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @keyframes ball-spin-fade-loader {
+            50% {
+                opacity: .3;
+                -webkit-transform: scale(.4);
+                transform: scale(.4)
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="PRINT & EVENT MODELING RECRUITMENT AGENCY" />
+    <meta name="robots" content="noodp" />
+    <link rel="canonical" href="index.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Print &amp; Event Modeling Recruitment Agency" />
+    <meta property="og:description" content="We are a cutting-edge model agency for live experiences &amp; events to create a fun, media-worthy experinece!" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:site_name" content="Molly's Dream Team" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Molly's Dream Team - We are a cutting-edge model agency for live experiences &amp; events to create a fun, media-worthy experinece! " />
+    <meta name="twitter:title" content="Molly's Dream Team | Promotional Models and Event Staffing Agency" />
+    <script type='application/ld+json'>
+        {"@context":"http:\/\/schema.org","@type":"WebSite","url":"index.html","name":"Molly's Dream Team","alternateName":"Molly's Dream Team","potentialAction":{"@type":"SearchAction","target":"index.html?s={search_term_string}","query-input":"required name=search_term_string"}}
+    </script>
+    <script type='application/ld+json'>
+        {"@context":"http:\/\/schema.org","@type":"Organization","url":"index.html","sameAs":[],"name":"Molly's Dream Team","logo":"../staff\/wp-content\/uploads\/2016\/06\/bb-logo-mobile.png"}
+    </script>
+    <link rel='dns-prefetch' href='../js.hs-scripts.com' />
+    <link rel='dns-prefetch' href='../maxcdn.bootstrapcdn.com' />
+    <link rel="shortcut icon" href="../cfrankiebb.wpengine.com/wp-content/uploads/2016/05/cropped-favicon.png" />
+    <script type="text/javascript">
+        window.abb = {};
+        php = {};
+        window.PHP = {};
+        var mk_images_dir = "wp-content/themes/jupiter/assets/images/",
+            mk_theme_js_path = "wp-content/themes/jupiter/assets/js/plugins/wp-enqueue/smoothscroll.js",
+            mk_theme_dir = "wp-content/themes/jupiter/",
+            mk_captcha_placeholder = "Enter Captcha",
+            mk_captcha_invalid_txt = "Invalid. Try again.",
+            mk_captcha_correct_txt = "Captcha correct.",
+            mk_responsive_nav_width = 960,
+            mk_vertical_header_back = "Back",
+            mk_vertical_header_anim = "1",
+            mk_check_rtl = true,
+            mk_grid_width = 1140,
+            mk_ajax_search_option = "disable",
+            mk_preloader_bg_color = "#ffffff",
+            mk_accent_color = "#cc3670",
+            mk_go_to_top = "true",
+            mk_smooth_scroll = "true",
+            mk_preloader_bar_color = "#cc3670",
+            mk_preloader_logo = "../cfrankiebb.wpengine.com/wp-content/uploads/2016/05/cropped-favicon.png";
+        var mk_header_parallax = false,
+            mk_banner_parallax = false,
+            mk_page_parallax = false,
+            mk_footer_parallax = false,
+            mk_body_parallax = false,
+            mk_no_more_posts = "No More Posts";
+    </script>
+    <script type="text/javascript">
+        !function (a, b, c) { function d(a, b) { var c = String.fromCharCode; l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0); var d = k.toDataURL(); l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0); var e = k.toDataURL(); return d === e } function e(a) { var b; if (!l || !l.fillText) return !1; switch (l.textBaseline = "top", l.font = "600 32px Arial", a) { case "flag": return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b); case "emoji": return b = d([55357, 56692, 8205, 9792, 65039], [55357, 56692, 8203, 9792, 65039]), !b }return !1 } function f(a) { var c = b.createElement("script"); c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var g, h, i, j, k = b.createElement("canvas"), l = k.getContext && k.getContext("2d"); for (j = Array("flag", "emoji"), c.supports = { everything: !0, everythingExceptFlag: !0 }, i = 0; i < j.length; i++)c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (h = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='fontawesome-css' href='../maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css?ver=4.6.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='js-media-query-css' href='wp-content/themes/jupiter/assets/stylesheet/min/media.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='theme-styles-css' href='wp-content/themes/jupiter/assets/stylesheet/min/core-styles.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-font-api-special-1-css' href='http://fonts.googleapis.com/css?family=Oswald%3A100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%2C100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.9.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-font-api-special-2-css' href='http://fonts.googleapis.com/css?family=Open+Sans%3A100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%2C100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.9.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='theme-dynamic-styles-css' href='wp-content/themes/jupiter/custom.css?ver=4.9.5' type='text/css' media='all' />
+    <style id='theme-dynamic-styles-inline-css' type='text/css'>
+        body {
+            background-color: #fff;
+        }
+
+        .mk-header {
+            background-color: #f7f7f7;
+        }
+
+        .mk-header-bg {
+            background-color: #fff;
+        }
+
+        .mk-classic-nav-bg {
+            background-color: #fff;
+        }
+
+        #theme-page {
+            background-color: #fff;
+        }
+
+        #mk-footer {
+            background-color: #f4f4f4;
+        }
+
+        #mk-boxed-layout {
+            -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+            -moz-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+        }
+
+        .mk-news-tab .mk-tabs-tabs .is-active a, .mk-fancy-title.pattern-style span, .mk-fancy-title.pattern-style.color-gradient span:after, .page-bg-color {
+            background-color: #fff;
+        }
+
+        .page-title {
+            font-size: 20px;
+            color:;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        .page-subtitle {
+            font-size: 14px;
+            line-height: 100%;
+            color:;
+            font-size: 14px;
+            text-transform: none;
+        }
+
+        .mk-header.sticky-style-fixed.a-sticky .mk-header-holder {
+            border-bottom: 1px solid #fafafa;
+        }
+
+        .header-style-1 .mk-header-padding-wrapper, .header-style-2 .mk-header-padding-wrapper, .header-style-3 .mk-header-padding-wrapper {
+            padding-top: 111px;
+        }
+
+        @font-face {
+            font-family: 'star';
+            src: url('wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.eot');
+            src: url('wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.eot?#iefix') format('embedded-opentype'), url('wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.woff') format('woff'), url('wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.ttf') format('truetype'), url('wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.svg#star') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'WooCommerce';
+            src: url('wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.eot');
+            src: url('wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.eot?#iefix') format('embedded-opentype'), url('wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.woff') format('woff'), url('wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.ttf') format('truetype'), url('wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.svg#WooCommerce') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #text-block-2 {
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        #mk-gradient-button-3 {
+            margin-top: 0px;
+            margin-bottom: 15px;
+            margin-right: 15px;
+        }
+
+            #mk-gradient-button-3 a {
+                background:;
+                background: -webkit-linear-gradient(bottom left,#cb4178 0%, #67b9ce 100%);
+                background: linear-gradient(to top right,#cb4178 0%, #67b9ce 100%);
+            }
+
+        #mk-shape-divider-5 .shape__container {
+            background-color:;
+        }
+
+            #mk-shape-divider-5 .shape__container .shape {
+                overflow: hidden;
+                height: 130;
+            }
+
+                #mk-shape-divider-5 .shape__container .shape svg {
+                    position: relative;
+                    top: -0.4px;
+                }
+
+        #text-block-6 {
+            margin-bottom: 0px;
+            text-align: left;
+        }
+
+        #mk-shape-divider-7 .shape__container {
+            background-color:;
+        }
+
+            #mk-shape-divider-7 .shape__container .shape {
+                overflow: hidden;
+                height: 130;
+            }
+
+                #mk-shape-divider-7 .shape__container .shape svg {
+                    position: relative;
+                    top: 0.4px;
+                }
+
+        .full-width-4 {
+            min-height: 100px;
+            margin-bottom: 0px;
+        }
+
+            .full-width-4 .page-section-content {
+                padding: 110px 0 110px;
+            }
+
+        #background-layer--4 {
+            background-position: left top;
+            background-repeat: repeat;
+        }
+
+        .full-width-4 .mk-skip-to-next {
+            bottom: 100px;
+        }
+
+        #text-block-8 {
+            margin-bottom: 0px;
+            text-align: left;
+        }
+
+        #clients-9 {
+            margin-bottom: 20px;
+        }
+
+            #clients-9 .client-logo {
+                border-color: #e4e4e5;
+                ;
+                border-width: 1px;
+                border-style: solid;
+                margin: 0 autopx;
+            }
+
+                #clients-9 .client-logo:hover {
+                }
+
+        #mk-shape-divider-11 .shape__container {
+            background-color:;
+        }
+
+            #mk-shape-divider-11 .shape__container .shape {
+                overflow: hidden;
+                height: 130;
+            }
+
+                #mk-shape-divider-11 .shape__container .shape svg {
+                    position: relative;
+                    top: -0.4px;
+                }
+
+        #mk-shape-divider-12 .shape__container {
+            background-color:;
+        }
+
+            #mk-shape-divider-12 .shape__container .shape {
+                overflow: hidden;
+                height: 130;
+            }
+
+                #mk-shape-divider-12 .shape__container .shape svg {
+                    position: relative;
+                    top: 0.4px;
+                }
+
+        .full-width-10 {
+            min-height: 100px;
+            margin-bottom: 0px;
+        }
+
+            .full-width-10 .page-section-content {
+                padding: 110px 0 110px;
+            }
+
+        #background-layer--10 {
+            background-position: left top;
+            background-repeat: repeat;
+        }
+
+        .full-width-10 .mk-skip-to-next {
+            bottom: 100px;
+        }
+
+        #text-block-13 {
+            margin-bottom: 0px;
+            text-align: left;
+        }
+
+        #loop-14.grid-spacing-true {
+            box-sizing: border-box;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
+            #loop-14.grid-spacing-true .mk-portfolio-grid-item .item-holder {
+                margin-left: 2px;
+                margin-right: 2px;
+                margin-bottom: 4px;
+            }
+
+        .sortable-id-14.sortable-outline-style {
+            background-color: #1a1a1a;
+            margin: 4px;
+            padding-left: 4px !important;
+            padding-right: 4px !important;
+        }
+
+            .sortable-id-14.sortable-outline-style a {
+                color: #cccccc;
+            }
+
+                .sortable-id-14.sortable-outline-style a.current {
+                    border-color: #cccccc !important;
+                }
+
+        #mk-shape-divider-16 .shape__container {
+            background-color:;
+        }
+
+            #mk-shape-divider-16 .shape__container .shape {
+                overflow: hidden;
+                height: 130;
+            }
+
+                #mk-shape-divider-16 .shape__container .shape svg {
+                    position: relative;
+                    top: -0.4px;
+                }
+
+        #text-block-17 {
+            margin-bottom: 0px;
+            text-align: left;
+        }
+
+        #mk-shape-divider-18 .shape__container {
+            background-color:;
+        }
+
+            #mk-shape-divider-18 .shape__container .shape {
+                overflow: hidden;
+                height: 130;
+            }
+
+                #mk-shape-divider-18 .shape__container .shape svg {
+                    position: relative;
+                    top: 0.4px;
+                }
+
+        .full-width-15 {
+            min-height: 100px;
+            margin-bottom: 0px;
+        }
+
+            .full-width-15 .page-section-content {
+                padding: 110px 0 110px;
+            }
+
+        #background-layer--15 {
+            background-position: left top;
+            background-repeat: repeat;
+        }
+
+        .full-width-15 .mk-skip-to-next {
+            bottom: 100px;
+        }
+
+        #text-block-19 {
+            margin-bottom: 0px;
+            text-align: left;
+        }
+
+        #mk-shape-divider-24 .shape__container {
+            background-color:;
+        }
+
+            #mk-shape-divider-24 .shape__container .shape {
+                overflow: hidden;
+                height: 130;
+            }
+
+                #mk-shape-divider-24 .shape__container .shape svg {
+                    position: relative;
+                    top: -0.4px;
+                }
+
+        #text-block-25 {
+            margin-bottom: 0px;
+            text-align: left;
+        }
+
+        #mk-shape-divider-26 .shape__container {
+            background-color:;
+        }
+
+            #mk-shape-divider-26 .shape__container .shape {
+                overflow: hidden;
+                height: 130;
+            }
+
+                #mk-shape-divider-26 .shape__container .shape svg {
+                    position: relative;
+                    top: 0.4px;
+                }
+
+        .full-width-23 {
+            min-height: 100px;
+            margin-bottom: 0px;
+        }
+
+            .full-width-23 .page-section-content {
+                padding: 110px 0 110px;
+            }
+
+        #background-layer--23 {
+            background-position: right center;
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+
+        .full-width-23 .mk-skip-to-next {
+            bottom: 100px;
+        }
+
+        .mk-quick-contact-link {
+            background-color: #cc3670;
+        }
+
+        .mk-go-top {
+            background-color: #58b7cc;
+        }
+    </style>
+
+    <link rel='stylesheet' id='js_composer_front-css' href='wp-content/plugins/js_composer_theme/assets/css/js_composer.min.css?ver=4.12.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='global-assets-css-css' href='wp-content/uploads/mk_assets/components-production.min.css?ver=1524690117' type='text/css' media='all' />
+    <link rel='stylesheet' id='theme-options-css' href='wp-content/uploads/mk_assets/theme-options-production.css?ver=1524690117' type='text/css' media='all' />
+    <link rel='stylesheet' id='pretty-photo-css' href='wp-content/plugins/easy-image-gallery/includes/lib/prettyphoto/prettyPhoto.css?ver=1.1.4' type='text/css' media='screen' />
+    <link rel='stylesheet' id='mk-style-css' href='wp-content/themes/jupiter-child/style.css?ver=4.9.5' type='text/css' media='all' />
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <link rel='https://api.w.org/' href='wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+    <link rel='shortlink' href='index.html' />
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <meta name="generator" content="Jupiter Child Theme - Molly's Dream Team 1.0" />
+    <style type="text/css" data-type="vc_shortcodes-custom-css">
+        .vc_custom_1464536931884 {
+            margin-top: 35px !important;
+            background-color: rgba(255,255,255,0.82) !important;
+            *background-color: rgb(255,255,255) !important;
+        }
+    </style>
+    <noscript>
+        <style type="text/css">
+            .wpb_animate_when_almost_visible {
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+</head>
+<body class="home page-template-default page page-id-10 loading wpb-js-composer js-comp-ver-4.12.1 vc_responsive" itemscope="itemscope" itemtype="https://schema.org/WebPage" data-adminbar="">
+    <div id="top-of-page"></div>
+    <div id="mk-boxed-layout">
+        <div id="mk-theme-container">
+            <header data-height='60'
+                    data-sticky-height='60'
+                    data-responsive-height='100'
+                    data-transparent-skin='light'
+                    data-header-style='2'
+                    data-sticky-style='fixed'
+                    data-sticky-offset='header' id="mk-header-1" class="mk-header header-style-2 header-align-left  toolbar-false menu-hover-2 sticky-style-fixed mk-background-stretch boxed-header mobile-align-right " role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+                <div class="mk-header-holder">
+                    <div class="mk-header-inner">
+                        <div class="mk-header-bg "></div>
+                        <div class="mk-grid header-grid">
+                            <div class="add-header-height">
+                                <div class="mk-nav-responsive-link">
+                                    <div class="mk-css-icon-menu">
+                                        <div class="mk-css-icon-menu-line-1"></div>
+                                        <div class="mk-css-icon-menu-line-2"></div>
+                                        <div class="mk-css-icon-menu-line-3"></div>
+                                    </div>
+                                </div>
+                                <div class=" header-logo fit-logo-img add-header-height logo-is-responsive ">
+                                    <a href="index.html" title="Molly's Dream Team">
+                                        <img class="mk-desktop-logo dark-logo" title="Promotions Agency Austin Texas (TX) &#8211; Austin Texas (TX) Promotions Agency, Promo Agency, Promotional Agencies, Modeling Agency, Talent Agency, Spokesmodels" alt="Promotions Agency Austin Texas (TX) &#8211; Austin Texas (TX) Promotions Agency, Promo Agency, Promotional Agencies, Modeling Agency, Talent Agency, Spokesmodels" src="../wp-content/uploads/2016/05/MDT-logo.png" />
+                                        <img class="mk-desktop-logo light-logo" title="Promotions Agency Austin Texas (TX) &#8211; Austin Texas (TX) Promotions Agency, Promo Agency, Promotional Agencies, Modeling Agency, Talent Agency, Spokesmodels" alt="Promotions Agency Austin Texas (TX) &#8211; Austin Texas (TX) Promotions Agency, Promo Agency, Promotional Agencies, Modeling Agency, Talent Agency, Spokesmodels" src="../wp-content/uploads/2016/05/MDT-logo.png" />
+                                        <img class="mk-resposnive-logo" src="../staff/wp-content/uploads/2016/05/logo-white.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearboth"></div>
+                        <div class="mk-header-nav-container menu-hover-style-2" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+                            <div class="mk-classic-nav-bg"></div>
+                            <div class="mk-classic-menu-wrapper">
+                                <aside>
+                                    <a href="index.html">
+                                        <img src="wp-content/uploads/2016/05/MDT-logo.png" />
+                                    </a>
+                                </aside>
+                                <aside>
+                                    <nav class="mk-main-navigation js-main-nav">
+                                        <ul id="menu-main-menu" class="main-navigation-ul">
+                                            <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link js-smooth-scroll" href="about-us/index.html">About us</a></li>
+                                            <li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link js-smooth-scroll" href="services/index.html">Services</a></li>
+                                            <li id="menu-item-795" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link js-smooth-scroll" href="contact-us/index.html">Contact</a></li>
+                                            <li id="menu-item-795" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link js-smooth-scroll" href="../staff/model-submission/index.html">Model Submission</a></li>
+                                        </ul>
+                                    </nav>
+                                </aside>
+                            </div>
+                        </div>
+
+                        <div class="mk-header-right">
+                        </div>
+
+                        <div class="mk-responsive-wrap">
+                            <nav class="menu-main-menu-container">
+                                <ul id="menu-main-menu-1" class="mk-responsive-nav">
+                                    <li id="menu-item-444" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-7 current_page_item"><a class="menu-item-link js-smooth-scroll" href="index.html">About us</a></li>
+                                    <li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll" href="../services/index.html">Services</a></li>
+                                    <li id="menu-item-795" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll" href="../contact-us/index.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="mk-header-padding-wrapper"></div>
+            </header>
+
+            <div id="theme-page" class="master-holder clearfix" role="main" itemprop="mainContentOfPage">
+                <div class="mk-main-wrapper-holder">
+                    <div id="mk-page-id-10" class="theme-page-wrapper mk-main-wrapper mk-grid full-layout  ">
+                        <div class="theme-content " itemprop="mainContentOfPage">
+                            <div class="wpb_row vc_row  mk-fullwidth-false  attched-false    vc_row-fluid  js-master-row ">
+                                <div style="" class="vc_col-sm-12 wpb_column column_container  _ height-full">
+                                    <div class="vc_empty_space" style="height: 45px"><span class="vc_empty_space_inner"></span></div>
+                                    <div id="text-block-2" class="mk-text-block   ">
+                                        <h1 style="text-align: center; color: #cc3670;"><span class="TextRun SCX251033318" lang="EN-US" xml:lang="EN-US"><span class="NormalTextRun SCX251033318">Print &amp; Event Modeling Recruitment Agency </span></span></h1>
+                                        <div class="clearboth"></div>
+                                    </div>
+                                    <h2 style="color: #58b7cc;text-align: center;font-family:Satisfy;font-weight:400;font-style:normal" class="vc_custom_heading">We are a cutting-edge model agency for live experiences &amp; events to create a fun, media-worthy experinece! </h2><div id="mk-gradient-button-3" class="mk-gradient-button fullwidth-false btn-align-center">
+                                        <a href="about-us\index.html" class="mk-button mk-button--dimension-two mk-button--size-large mk-button--corner-rounded light-skin" target="_self">
+                                            <span class="text">Learn More</span>
+                                            <i class="darker-background"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mk-page-section-wrapper">
+                    <div id="page-section-4" class="mk-page-section self-hosted  full-width-4 js-el js-master-row    " data-intro-effect="false">
+                        <div class="mk-shape-divider mk-shape-divider--stick diagonal-top-style big-size mk-shape-divider--stick-top" id="mk-shape-divider-5">
+                            <div class="shape__container">
+                                <div class="shape">
+                                    <svg width="100%" height="130px"><defs><pattern id="shapeDividerPattern-5" preserveaspectratio="none" style="background-repeat: none;" patternunits="userSpaceOnUse" x="0" y="0" width="100%" height="1300px" viewbox="0 0 100 1300"><polygon fill="#ffffff" points="0,130 0,0 100,0 "></polygon></pattern></defs><!-- Background --><rect x="0" y="0" width="100%" height="130px" fill="url(#shapeDividerPattern-5)"></rect></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mk-page-section-inner">
+                            <div class="mk-video-color-mask"></div>
+                            <div class="background-layer-holder">
+                                <div id="background-layer--4" class="background-layer  none-blend-effect js-el" data-mk-img-set='{"landscape":{"desktop":"wp-content\/uploads\/2013\/11\/Pink-Bokeh.jpg","tablet":"wp-content\/uploads\/2013\/11\/Pink-Bokeh-1024x768.jpg","mobile":"wp-content\/uploads\/2013\/11\/Pink-Bokeh-736x414.jpg"}}'>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-section-content vc_row-fluid mk-grid">
+                            <div class="mk-padding-wrapper">
+                                <div class="vc_col-sm-4 wpb_column column_container  _ height-full">
+                                    <div class="vc_empty_space" style="height: 102px"><span class="vc_empty_space_inner"></span></div>
+                                    <div id="text-block-6" class="mk-text-block   ">
+                                        <p>Whether your event calls for our beautiful & experienced models to offer a helping hand behind the bar, or offer a warm welcoming smile and direction guidance to arriving guests; we provide exactly what you need.. mind-blowing, successful, actionable results from all those participating in key events.</p>
+                                        <p><strong>More than stunning promotional models, we take pride in our models’ intelligence, enthusiasm & positive attitudes in even the most stressful of situations</strong></p>
+                                        <p>Whether you need promotional models for a convention or event; street teams; trained mixologists or tray passers; educators or demonstrators for your brand or event-we have you covered!</p>
+                                        <div class="clearboth"></div>
+                                    </div>
+                                    <h3 style="color: #cc3670;text-align: left;font-family:Satisfy;font-weight:400;font-style:normal" class="vc_custom_heading">
+                                        Let us help your brand make an epic statement!”
+                                    </h3>
+                                    <p>Our models’ enthusiasm for your brand as well as for their work ethic creates real connections with positive experiences & emotional bonds between your brand & your consumers that lasts.</p>
+                                </div>
+                                <div style="" class="vc_col-sm-8 wpb_column column_container  _ height-full">
+                                    <div class="wpb_single_image wpb_content_element vc_align_right">
+                                        <figure class="wpb_wrapper vc_figure">
+                                            <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                                <br /><br /><br /><br /><br /><br /><br /><br />
+                                                <img width="839" height="858" src="../Dream-Team/wp-content/uploads/2013/11/pretty-faces_blkshirts.png" class="vc_single_image-img attachment-full" sizes="(max-width: 839px) 100vw, 839px" />
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearboth"></div>
+                        </div>
+
+                        <div class="mk-shape-divider mk-shape-divider--stick diagonal-bottom-style big-size mk-shape-divider--stick-bottom" id="mk-shape-divider-7">
+                            <div class="shape__container">
+                                <div class="shape">
+
+                                    <svg width="100%" height="130px"><defs><pattern id="shapeDividerPattern-7" preserveaspectratio="none" style="background-repeat: none;" patternunits="userSpaceOnUse" x="0" y="0" width="100%" height="1300px" viewbox="0 0 100 1300"><polygon fill="#ffffff" points="100,0 100,130 0,130 "></polygon></pattern></defs><!-- Background --><rect x="0" y="0" width="100%" height="130px" fill="url(#shapeDividerPattern-7)"></rect></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearboth"></div>
+                    </div>
+                </div>
+
+                <div class="mk-main-wrapper-holder">
+                    <div class="theme-page-wrapper  full-layout mk-grid vc_row-fluid">
+                        <div class="theme-content ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wpb_row vc_row  mk-fullwidth-true add-padding-3 attched-true    vc_row-fluid  equal-columns js-master-row ">
+                    <div class="mk-grid">
+                        <div style="" class="vc_col-sm-12 wpb_column column_container  _ height-full">
+                            <div id="text-block-8" class="mk-text-block   ">
+                                <h1 style="text-align: center; color: #cc3670;">We’re models With These Brands</h1>
+                                <div class="clearboth"></div>
+                            </div>
+                            <div id="clients-9" data-animation="slide" data-easing="swing" data-direction="horizontal" data-smoothheight="false" data-slideshowspeed="4000" data-animationspeed="500" data-pauseonhover="true" data-controlnav="false" data-directionnav="false" data-iscarousel="true" data-itemwidth="180" data-itemmargin="0" data-minitems="1" data-maxitems="6" data-move="1" class="mk-clients mk-flexslider js-flexslider mk-script-call bg-cover-true slideshow-no-title slideshow-no-title ">
+                                <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                                    <ul class="mk-flex-slides" style="width: 2600%; transition-duration: 0.5s; transform: translate3d(-760px, 0px, 0px);">
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="Microsoft" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/05/microsoft-logo.png);  height:200px; "></div>
+                                        </li>
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="Mophie" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/05/morphie.png);  height:200px; "></div>
+                                        </li>
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="Lamborghini" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/05/lam-logo.png);  height:200px; "></div>
+                                        </li>
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="Dell" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/05/dell-logo.png);  height:200px; "></div>
+                                        </li>
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="The Patron" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/05/patron.jpg);  height:200px; "></div>
+                                        </li>
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="Coachella" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/06/coachella-3.png);  height:200px; "></div>
+                                        </li>
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="Belvedre Vodka" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/06/belvedre-vodka.png);  height:200px; "></div>
+                                        </li>
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="SXSW" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/06/sxsw.png);  height:200px; "></div>
+                                        </li>
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="Ferrari" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/06/ferrari-2.png);  height:200px; "></div>
+                                        </li>
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="Don’t Mess with Texas" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/06/dont-mess-with-texas.png);  height:200px; "></div>
+                                        </li>
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="Oculus Rift" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/06/oculus-rift.png);  height:200px; "></div>
+                                        </li>
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="MAC" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/06/mac-logo.png);  height:200px; "></div>
+                                        </li>
+                                        <li style="width: 190px; float: left; display: block;">
+                                            <div title="Mashable" class="client-logo" style="background-image:url(../Dream-Team/wp-content/uploads/2016/06/mashable.png);  height:200px; "></div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3 style="color: #58b7cc;text-align: center;font-family:Satisfy;font-weight:400;font-style:normal" class="vc_custom_heading">Corvette Specialty TerraVasio Blaznow UNIBeachwear Los Angeles Fair Ecann  Corporate Dinners Coachella Where’s Weed Sema (Toyota?) Gran Prix AVN’s Exhale ComicCon</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mk-main-wrapper-holder">
+                    <div class="theme-page-wrapper full-layout mk-grid vc_row-fluid no-padding">
+                        <div class="theme-content no-padding">
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mk-page-section-wrapper">
+                    <div id="page-section-10" class="mk-page-section self-hosted  full-width-10 js-el js-master-row    " data-intro-effect="false">
+                        <div class="mk-shape-divider mk-shape-divider--stick diagonal-top-style big-size mk-shape-divider--stick-top" id="mk-shape-divider-11">
+                            <div class="shape__container">
+                                <div class="shape">
+                                    <svg width="100%" height="130px"><defs><pattern id="shapeDividerPattern-11" preserveaspectratio="none" style="background-repeat: none;" patternunits="userSpaceOnUse" x="0" y="0" width="100%" height="1300px" viewbox="0 0 100 1300"><polygon fill="#ffffff" points="0,130 0,0 100,0 "></polygon></pattern></defs><!-- Background --><rect x="0" y="0" width="100%" height="130px" fill="url(#shapeDividerPattern-11)"></rect></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mk-page-section-inner">
+                            <div class="mk-video-color-mask"></div>
+                            <div class="background-layer-holder">
+                                <div id="background-layer--10" class="background-layer  none-blend-effect js-el" data-mk-img-set='{"landscape":{"desktop":"..\/Dream-Team\/wp-content\/uploads\/2013\/11\/teal-bokeh.jpg","tablet":"..\/Dream-Team\/wp-content\/uploads\/2013\/11\/teal-bokeh-1024x768.jpg","mobile":"..\/Dream-Team\/wp-content\/uploads\/2013\/11\/teal-bokeh-736x414.jpg"}}'>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-section-content vc_row-fluid mk-grid">
+                            <div class="mk-padding-wrapper">
+                                <div style="" class="vc_col-sm-12 wpb_column column_container  _ height-full">
+                                    <div class="vc_empty_space" style="height: 52px"><span class="vc_empty_space_inner"></span></div>
+                                    <h2 class="satisfy">&#8220;The girls were fantastic! The best we have ever been able to contract! They were so much more versatile and well-spoken about our products than anyone on our internal team.&#8221;</h2>
+                                    <h3 style="text-align: center; font-weight: 300; color: #cc3670;">&#8212; Chroncierge.com @ Coachella</h3>
+
+                                </div>
+                            </div>
+                            <div class="clearboth"></div>
+                        </div>
+
+                        <div class="mk-shape-divider mk-shape-divider--stick diagonal-bottom-style big-size mk-shape-divider--stick-bottom" id="mk-shape-divider-12">
+                            <div class="shape__container">
+                                <div class="shape">
+                                    <svg width="100%" height="130px"><defs><pattern id="shapeDividerPattern-12" preserveaspectratio="none" style="background-repeat: none;" patternunits="userSpaceOnUse" x="0" y="0" width="100%" height="1300px" viewbox="0 0 100 1300"><polygon fill="#ffffff" points="100,0 100,130 0,130 "></polygon></pattern></defs><!-- Background --><rect x="0" y="0" width="100%" height="130px" fill="url(#shapeDividerPattern-12)"></rect></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearboth"></div>
+                    </div>
+                </div>
+
+                <div class="mk-main-wrapper-holder">
+                    <div class="theme-page-wrapper  full-layout mk-grid vc_row-fluid">
+                        <div class="theme-content ">
+                            <div class="wpb_row vc_row  mk-fullwidth-false  attched-false    vc_row-fluid  js-master-row ">
+                                <div style="" class="vc_col-sm-12 wpb_column column_container  _ height-full">
+                                    <div id="text-block-13" class="mk-text-block   ">
+                                        <h1 style="color: #cc3670; text-align: center;">Promotional, Print, Event, We know how to represent!!</h1>
+                                        <div class="clearboth"></div>
+                                    </div>
+
+                                    <div class="portfolio-grid ">
+                                        <div class="ajax-container page-bg-color mk-grid">
+                                            <div class="ajax-controls">
+                                                <a href="#" class="close-ajax"><svg class="mk-svg-icon" data-name="mk-moon-close-2" data-cacheid="icon-5ae90bb7c6847" style=" height:16px; width: 16px; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M390.628 345.372l-45.256 45.256-89.372-89.373-89.373 89.372-45.255-45.255 89.373-89.372-89.372-89.373 45.254-45.254 89.373 89.372 89.372-89.373 45.256 45.255-89.373 89.373 89.373 89.372z" /></svg></a>
+                                                <a href="#" class="next-ajax"><svg class="mk-svg-icon" data-name="mk-jupiter-icon-arrow-right" data-cacheid="icon-5ae90bb7c6db7" style=" height:16px; width: 16px; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M144 505.6c8 0 16-3.2 22.4-8l240-225.6c6.4-6.4 9.6-14.4 9.6-22.4s-3.2-16-9.6-22.4l-240-224c-12.8-12.8-32-12.8-44.8 0s-11.2 32 1.6 44.8l214.4 201.6-216 203.2c-12.8 11.2-12.8 32 0 44.8 6.4 4.8 14.4 8 22.4 8z" /></svg></a>
+                                                <a href="#" class="prev-ajax"><svg class="mk-svg-icon" data-name="mk-jupiter-icon-arrow-left" data-cacheid="icon-5ae90bb7c70dd" style=" height:16px; width: 16px; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M368 505.6c-8 0-16-3.2-22.4-8l-240-225.6c-6.4-6.4-9.6-14.4-9.6-24 0-8 3.2-16 9.6-22.4l240-224c12.8-11.2 33.6-11.2 44.8 1.6 12.8 12.8 11.2 32-1.6 44.8l-214.4 201.6 216 203.2c12.8 11.2 12.8 32 0 44.8-4.8 4.8-14.4 8-22.4 8z" /></svg></a>
+                                            </div>
+                                        </div>
+                                        <div id="loop-main-wrapper-14">
+                                            <section id="loop-14" data-query="eyJwb3N0X3R5cGUiOiJwb3J0Zm9saW8iLCJjb3VudCI6IjMiLCJvZmZzZXQiOjAsImNhdGVnb3JpZXMiOiIiLCJhdXRob3IiOiIiLCJwb3N0cyI6IiIsIm9yZGVyYnkiOiJkYXRlIiwib3JkZXIiOiJBU0MifQ==" data-loop-atts="eyJzaG9ydGNvZGVfbmFtZSI6Im1rX3BvcnRmb2xpbyIsInN0eWxlIjoiZ3JpZCIsImNvbHVtbiI6MywiYWpheCI6ImZhbHNlIiwibGF5b3V0IjoiZnVsbCIsImhlaWdodCI6MzAwLCJwYWdpbmF0aW9uIjoiZmFsc2UiLCJ0YXJnZXQiOiJfc2VsZiIsIm1ldGFfdHlwZSI6ImNhdGVnb3J5IiwicGVybWFsaW5rX2ljb24iOiJ0cnVlIiwiem9vbV9pY29uIjoiZmFsc2UiLCJncmlkX3NwYWNpbmciOjQsImhvdmVyX3NjZW5hcmlvcyI6ImN1YmUiLCJpbWFnZV9zaXplIjoibGFyZ2UiLCJleGNlcnB0X2xlbmd0aCI6MjAwLCJyIjowfQ==" data-pagination-style="0" data-max-pages="1" data-loop-iterator="3" data-loop-categories="" data-loop-author="" data-loop-posts="" class="mk-portfolio-container js-loop js-el mk-portfolio-grid grid-spacing-true  clearfix">
+                                                <div class="portfolio-loader">
+                                                    <div><div class="mk-preloader"></div></div>
+                                                </div>
+                                                <article id="429" class="mk-portfolio-item mk-portfolio-grid-item three-column cube-hover ">
+                                                    <div class="item-holder">
+                                                        <div class="featured-image js-taphover ">
+                                                            <img title="Leprechaun Hard Cider Launch into Texas &#8211; Liquor Tastings" src="/wp-content/uploads/bfi_thumb/dummy-transparent-mxi153fkrqdcph6aimnpz3imfpcm0zu3503g0aza4g.png" data-mk-image-src-set='{"default":"..\/Dream-Team\/wp-content\/uploads\/2016\/08\/556636_398511633536498_913132924_n-e1470849134929-1024x1024.jpg","2x":"","mobile":""}' width="1024" height="1024" />
+                                                            <div class="image-hover-overlay"></div>
+                                                            <div class="portfolio-meta">
+                                                                <div class="add-middle-align">
+                                                                    <h3 class="the-title">
+                                                                        <a>Leprechaun Hard Cider Launch into Texas &#8211; Liquor Tastings</a>
+                                                                    </h3>
+                                                                    <div class="clearboth"></div>	<div class="portfolio-categories"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                <article id="433" class="mk-portfolio-item mk-portfolio-grid-item three-column cube-hover ">
+                                                    <div class="item-holder">
+                                                        <div class="featured-image js-taphover " onclick="">
+                                                            <img alt="Mophie &#8211; SXSW" title="Mophie &#8211; SXSW" src="wp-content/uploads/bfi_thumb/dummy-transparent-mxi153fkrqdcph6aimnpz3imfpcm0zu3503g0aza4g.png" data-mk-image-src-set='{"default":"..\/Dream-Team\/wp-content\/uploads\/2016\/06\/602011_600175316677571_896055512_n-1024x1024.jpg","2x":"","mobile":""}' width="1024" height="1024" />
+                                                            <div class="image-hover-overlay"></div>
+                                                            <div class="portfolio-meta">
+                                                                <div class="add-middle-align">
+                                                                    <h3 class="the-title">
+                                                                        <a>Mophie &#8211; SXSW</a>
+                                                                    </h3><div class="clearboth"></div>	<div class="portfolio-categories"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                <article id="434" class="mk-portfolio-item mk-portfolio-grid-item three-column cube-hover ">
+                                                    <div class="item-holder">
+                                                        <div class="featured-image js-taphover " onclick="">
+                                                            <img alt="Don&#8217;t Mess With Texas &#8211; 30th Anniversary Trash &#038; Treasure Hunt" title="Don&#8217;t Mess With Texas &#8211; 30th Anniversary Trash &#038; Treasure Hunt" src="wp-content/uploads/bfi_thumb/dummy-transparent-mxi153fkrqdcph6aimnpz3imfpcm0zu3503g0aza4g.png" data-mk-image-src-set='{"default":"..\/Dream-Team\/wp-content\/uploads\/2016\/06\/TxDot-15-08-02-176-1024x1024.jpg","2x":"","mobile":""}' width="1024" height="1024" />
+                                                            <div class="image-hover-overlay"></div>
+                                                            <div class="portfolio-meta">
+                                                                <div class="add-middle-align">
+                                                                    <h3 class="the-title">
+                                                                        <a>Don&#8217;t Mess With Texas &#8211; 30th Anniversary Trash &#038; Treasure Hunt</a>
+                                                                    </h3><div class="clearboth"></div>	<div class="portfolio-categories"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </section>
+                                            <input type="hidden" id="safe_load_more" name="safe_load_more" value="7391f1fc3b" />
+                                            <input type="hidden" name="_wp_http_referer" value="/" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mk-page-section-wrapper">
+                    <div id="page-section-15" class="mk-page-section self-hosted  full-width-15 js-el js-master-row    " data-intro-effect="false">
+                        <div class="mk-shape-divider mk-shape-divider--stick diagonal-top-style big-size mk-shape-divider--stick-top" id="mk-shape-divider-16">
+                            <div class="shape__container">
+                                <div class="shape">
+                                    <svg width="100%" height="130px"><defs><pattern id="shapeDividerPattern-16" preserveaspectratio="none" style="background-repeat: none;" patternunits="userSpaceOnUse" x="0" y="0" width="100%" height="1300px" viewbox="0 0 100 1300"><polygon fill="#ffffff" points="0,130 0,0 100,0 "></polygon></pattern></defs><!-- Background --><rect x="0" y="0" width="100%" height="130px" fill="url(#shapeDividerPattern-16)"></rect></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mk-page-section-inner">
+                            <div class="mk-video-color-mask"></div>
+                            <div class="background-layer-holder">
+                                <div id="background-layer--15" class="background-layer  none-blend-effect js-el" data-mk-img-set='{"landscape":{"desktop":"\/wp-content\/uploads\/2013\/11\/MDTBackGround-736x414.jpg","tablet":"..\/wp-content\/uploads\/2013\/11\/MDTBackGround-1024x768.jpg","mobile":"..\/wp-content\/uploads\/2013\/11\/MDTBackGround-736x414.jpg"}}'>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mk-shape-divider mk-shape-divider--stick diagonal-bottom-style big-size mk-shape-divider--stick-bottom" id="mk-shape-divider-18">
+                            <div class="shape__container">
+                                <div class="shape">
+                                    <svg width="100%" height="130px"><defs><pattern id="shapeDividerPattern-18" preserveaspectratio="none" style="background-repeat: none;" patternunits="userSpaceOnUse" x="0" y="0" width="100%" height="1300px" viewbox="0 0 100 1300"><polygon fill="#ffffff" points="100,0 100,130 0,130 "></polygon></pattern></defs><!-- Background --><rect x="0" y="0" width="100%" height="130px" fill="url(#shapeDividerPattern-18)"></rect></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearboth"></div>
+                    </div>
+                </div>
+
+                <div class="mk-main-wrapper-holder">
+                    <div class="theme-page-wrapper  full-layout mk-grid vc_row-fluid">
+                        <div class="theme-content ">
+                            <div class="wpb_row vc_row  mk-fullwidth-false  attched-false    vc_row-fluid  js-master-row ">
+                                <div style="" class="vc_col-sm-12 wpb_column column_container  _ height-full">
+                                    <div id="text-block-19" class="mk-text-block   ">
+                                        <h1 style="text-align: center; color: #cc3670;">Our Models Are&#8230;</h1>
+                                        <div class="clearboth"></div>
+                                    </div>
+                                    <div class="wpb_row vc_inner vc_row    attched-false   vc_row-fluid ">
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div id="box-icon-20" style="margin-bottom:30px;" class="  boxed-style mk-box-icon clearfix">
+                                                        <div class="icon-box-boxed top">
+                                                            <i style="background-color:#cc3670;color:#ffffff;" class=" mk-main-ico"><svg class="mk-svg-icon" data-name="mk-moon-history" data-cacheid="icon-5ae11d7bd2278" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M288 32c123.712 0 224 100.288 224 224s-100.288 224-224 224v-48c47.012 0 91.209-18.307 124.451-51.549 33.242-33.242 51.549-77.439 51.549-124.451 0-47.011-18.307-91.209-51.549-124.451-33.242-33.242-77.439-51.549-124.451-51.549-47.011 0-91.209 18.307-124.451 51.549-25.57 25.569-42.291 57.623-48.653 92.451h93.104l-112 128-112-128h82.285c15.53-108.551 108.869-192 221.715-192zm96 192v64h-128v-160h64v96z" /></svg></i><h4 style="font-size:16px;font-weight:inherit;"></h4><h2 class="satisfy" style="text-align: center;">
+                                                                Relieble, <br />
+                                                                Timely
+                                                            </h2>
+                                                            <div class="clearboth"></div>
+                                                        </div><div class="clearboth"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div id="box-icon-21" style="margin-bottom:30px;" class="  boxed-style mk-box-icon clearfix">
+                                                        <div class="icon-box-boxed top">
+                                                            <i style="background-color:#cc3670;color:#ffffff;" class=" mk-main-ico"><svg class="mk-svg-icon" data-name="mk-moon-diamond-2" data-cacheid="icon-5ae11d7bd2ca4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M384 64h-256l-128 128 256 288 256-288-128-128zm-128 325.333v-1.333h-1.185l-7.111-8h8.296v-8h-15.407l-7.111-8h22.518v-8h-29.629l-7.111-8h36.74v-8h-43.852l-7.111-8h50.963v-8h-58.074l-7.111-8h65.185v-8h-72.296l-7.111-8h79.407v-8h-86.519l-7.111-8h93.63v-8h-100.741l-7.111-8h107.852v-8h-114.963l-7.111-8h122.074v-8h-129.186l-7.111-8h136.297v-8h-143.408l-7.111-8h150.519v-8h-157.63l-7.111-8h164.741v-8h-171.853l-3.672-4.131 69.536-69.536h105.989v1.667h107.657l8 8h-115.657v8h123.657l8 8h-131.657v8h139.657l8 8h-147.657v8h155.657l8 8h-163.657v8h171.656l3.869 3.869-175.525 197.464z" /></svg></i><h4 style="font-size:16px;font-weight:inherit;"></h4><h2 class="satisfy" style="text-align: center;">
+                                                                Discrete
+                                                            </h2>
+                                                            <br /><br />
+                                                            <div class="clearboth"></div>
+                                                        </div><div class="clearboth"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div id="box-icon-22" style="margin-bottom:30px;" class="  boxed-style mk-box-icon clearfix">
+                                                        <div class="icon-box-boxed top">
+                                                            <i style="background-color:#cc3670;color:#ffffff;" class=" mk-main-ico"><svg class="mk-svg-icon" data-name="mk-icon-lightbulb-o" data-cacheid="icon-5ae11d7bd3886" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1792"><path d="M736 576q0 13-9.5 22.5t-22.5 9.5-22.5-9.5-9.5-22.5q0-46-54-71t-106-25q-13 0-22.5-9.5t-9.5-22.5 9.5-22.5 22.5-9.5q50 0 99.5 16t87 54 37.5 90zm160 0q0-72-34.5-134t-90-101.5-123-62-136.5-22.5-136.5 22.5-123 62-90 101.5-34.5 134q0 101 68 180 10 11 30.5 33t30.5 33q128 153 141 298h228q13-145 141-298 10-11 30.5-33t30.5-33q68-79 68-180zm128 0q0 155-103 268-45 49-74.5 87t-59.5 95.5-34 107.5q47 28 47 82 0 37-25 64 25 27 25 64 0 52-45 81 13 23 13 47 0 46-31.5 71t-77.5 25q-20 44-60 70t-87 26-87-26-60-70q-46 0-77.5-25t-31.5-71q0-24 13-47-45-29-45-81 0-37 25-64-25-27-25-64 0-54 47-82-4-50-34-107.5t-59.5-95.5-74.5-87q-103-113-103-268 0-99 44.5-184.5t117-142 164-89 186.5-32.5 186.5 32.5 164 89 117 142 44.5 184.5z" /></svg></i><h4 style="font-size:16px;font-weight:inherit;"></h4><h2 class="satisfy" style="text-align: center;">
+                                                                Professional,<br />
+                                                                Elegant
+                                                            </h2>
+                                                            <div class="clearboth"></div>
+                                                        </div><div class="clearboth"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div id="box-icon-21" style="margin-bottom:30px;" class="  boxed-style mk-box-icon clearfix">
+                                                        <div class="icon-box-boxed top">
+                                                            <i style="background-color:#cc3670;color:#ffffff;" class=" mk-main-ico"><svg class="mk-svg-icon" data-name="mk-moon-diamond-2" data-cacheid="icon-5ae11d7bd2ca4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M384 64h-256l-128 128 256 288 256-288-128-128zm-128 325.333v-1.333h-1.185l-7.111-8h8.296v-8h-15.407l-7.111-8h22.518v-8h-29.629l-7.111-8h36.74v-8h-43.852l-7.111-8h50.963v-8h-58.074l-7.111-8h65.185v-8h-72.296l-7.111-8h79.407v-8h-86.519l-7.111-8h93.63v-8h-100.741l-7.111-8h107.852v-8h-114.963l-7.111-8h122.074v-8h-129.186l-7.111-8h136.297v-8h-143.408l-7.111-8h150.519v-8h-157.63l-7.111-8h164.741v-8h-171.853l-3.672-4.131 69.536-69.536h105.989v1.667h107.657l8 8h-115.657v8h123.657l8 8h-131.657v8h139.657l8 8h-147.657v8h155.657l8 8h-163.657v8h171.656l3.869 3.869-175.525 197.464z" /></svg></i><h4 style="font-size:16px;font-weight:inherit;"></h4><h2 class="satisfy" style="text-align: center;">
+                                                                Sincere &amp; Outgoing
+                                                            </h2>
+                                                            <div class="clearboth"></div>
+                                                        </div><div class="clearboth"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <h3 style="color: #cc3670;text-align: center;font-family:Satisfy;font-weight:400;font-style:normal" class="vc_custom_heading">The best in the industry to represent you and your brand!</h3>
+                                </div>
+                                <div class="clearboth"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="mk-page-section-wrapper">
+                        <div id="page-section-23" class="mk-page-section self-hosted  full-width-23 js-el js-master-row    " data-intro-effect="false">
+                            <div class="mk-shape-divider mk-shape-divider--stick diagonal-top-style big-size mk-shape-divider--stick-top" id="mk-shape-divider-24">
+                                <div class="shape__container">
+                                    <div class="shape">
+                                        <svg width="100%" height="130px">
+                                            <defs>
+                                                <pattern id="shapeDividerPattern-24" preserveaspectratio="none" style="background-repeat: none;" patternunits="userSpaceOnUse" x="0" y="0" width="100%" height="1300px" viewbox="0 0 100 1300">
+                                                    <polygon fill="#ffffff" points="0,130 0,0 100,0 "></polygon>
+                                                </pattern>
+                                            </defs>
+                                            <rect x="0" y="0" width="100%" height="130px" fill="url(#shapeDividerPattern-24)"></rect>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mk-page-section-inner">
+                                <div class="mk-video-color-mask"></div>
+                                <div class="mk-section-preloader js-el" data-mk-component="Preloader">
+                                    <div class="mk-section-preloader__icon"></div>
+                                </div>
+                                <div class="background-layer-holder">
+                                    <div id="background-layer--23" style="opacity:0.6" class="background-layer mk-background-stretch none-blend-effect js-el" data-mk-component="Parallax" data-parallax-config='{"speed" : 0.3 }' data-mk-img-set='{"landscape":{"desktop":"..\/Dream-Team\/wp-content\/uploads\/2013\/11\/Meet-Corina-cropped.jpg","tablet":"..\/Dream-Team\/wp-content\/uploads\/2013\/11\/Meet-Corina-cropped-1024x768.jpg","mobile":"..\/Dream-Team\/wp-content\/uploads\/2013\/11\/Meet-Corina-cropped-736x414.jpg"}}'>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-section-content vc_row-fluid mk-grid">
+                                <div class="mk-padding-wrapper">
+                                    <div style="" class="vc_col-sm-12 wpb_column column_container  _ height-full">
+                                        <div class="wpb_row vc_inner vc_row    attched-false   vc_row-fluid ">
+                                            <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
+                                                <div class="vc_column-inner vc_custom_1464536931884">
+                                                    <div class="wpb_wrapper">
+                                                        <div id="text-block-25" class="mk-text-block   ">
+                                                            <h1 style="margin: 0; color: #cc3670;">Meet Corina</h1>
+                                                            <p style="line-height: 14pt;">As principal owner of Molly's Dream Team, and over 15 years of industry experience, Corina Frankie knows what it takes to craft high-impact experiences. Her personal philosophy:</p>
+                                                            <div class="clearboth"></div>
+                                                        </div>
+                                                        <p style="font-size: 24px;color: #58b7cc;text-align: left;font-family:Satisfy;font-weight:400;font-style:normal" class="vc_custom_heading">"Meaningful and exciting experiences are powerful. I take that to heart. At Molly's Dream Team, we DO NOT staff solely based on availability. Our Market Managers in each city carefully handpick talent that is a natural fit to represent your brand."</p>
+                                                    </div>
+                                                </div>
+                                            </div><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner "><div class="wpb_wrapper"></div></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearboth"></div>
+                            </div>
+
+                            <div class="mk-shape-divider mk-shape-divider--stick diagonal-bottom-style big-size mk-shape-divider--stick-bottom" id="mk-shape-divider-26">
+                                <div class="shape__container">
+                                    <div class="shape">
+                                        <svg width="100%" height="130px"><defs><pattern id="shapeDividerPattern-26" preserveaspectratio="none" style="background-repeat: none;" patternunits="userSpaceOnUse" x="0" y="0" width="100%" height="1300px" viewbox="0 0 100 1300"><polygon fill="#ffffff" points="100,0 100,130 0,130 "></polygon></pattern></defs><rect x="0" y="0" width="100%" height="130px" fill="url(#shapeDividerPattern-26)"></rect></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>-->
+
+                    <div class="mk-main-wrapper-holder">
+                        <div class="theme-page-wrapper  full-layout mk-grid vc_row-fluid">
+                            <div class="theme-content ">
+                                <div class="clearboth"></div>
+                                <div class="clearboth"></div>
+                            </div>
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <section id="mk-footer-unfold-spacer"></section>
+
+                <section id="mk-footer" class="" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+                    <div class="footer-wrapper fullwidth-footer">
+                        <div class="mk-padding-wrapper">
+                            <div class="mk-col-1-4">
+                                <section id="text-19" class="widget widget_text">
+                                    <div class="textwidget">
+                                        <a href="" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                                        <h3 style="margin:10px 0 0;"><span style="color: #58b7cb;">310-974-1056</span></h3>
+                                    </div>
+                                </section>
+                                <section id="text-6" class="widget widget_text">
+                                    <div class="widgettitle">Contact Us</div>
+                                    <div class="textwidget">
+                                        <form action="../../index.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                                            <div>
+                                                <input type="text" value="" name="FNAME" class="" id="FNAME" placeholder="First Name">
+                                            </div>
+                                            <div>
+                                                <input type="email" value="" name="EMAIL" class="required email" id="EMAIL" placeholder="Email">
+                                            </div>
+                                            <div>
+                                                <textarea id="description" value="" name="description" placeholder="description"></textarea>
+                                            </div>
+                                            <br /><input type="submit" name="submit" value="Submit" class="bestie-button">
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="mk-col-1-4" style="width: 50%;">
+                                <section id="recent_posts-9" class="widget widget_posts_lists">
+                                    <div class="widgettitle">Past Events</div>
+                                    <ul>
+                                        <li class="post-list-image">
+                                            <a href="past-events/index.html" title="Research and analysis of competitors and target markets help us develop opportunistic market strategies and plans" class="post-list-thumb">
+                                                <img src="wp-content/uploads/2016/08/past-event-banner-150x150.jpg" width="150" height="150" />
+                                            </a>
+                                            <div class="post-list-info ">
+                                                <a href="past-events/index.html" class="post-list-title">Research and analysis of competitors and target markets help us develop opportunistic market strategies and plans</a>
+                                                <div class="post-list-meta">
+                                                    <time datetime="2016-08-10">August 10, 2016</time>
+                                                </div>
+                                            </div>
+                                            <div class="clearboth"></div>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+
+                            <div class="mk-col-1-4" style="float: right;">
+                                <section id="nav_menu-6" class="widget widget_nav_menu">
+                                    <div class="widgettitle">Menu</div>
+                                    <div class="menu-footer-navigation-container">
+                                        <ul id="menu-footer-navigation" class="menu">
+                                            <li id="menu-item-1262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1262"><a href="past-events/index.html"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-5ae11d7bdf6cb" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Past Events</a></li>
+                                            <li id="menu-item-493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-493"><a href="about-us/index.html"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-5ae11d7bdf6cb" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>About Us</a></li>
+                                            <li id="menu-item-496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-496"><a href="services/index.html"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-5ae11d7bdf6cb" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>What We Do</a></li>
+                                            <li id="menu-item-497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-497"><a href="staff-your-event/index.html"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-5ae11d7bdf6cb" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Let’s Get You Staffed</a></li>
+                                            <!--<li id="menu-item-1190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1190"><a href="https://www.popbookings.com/vip/brandbesties"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-5ae11d7bdf6cb" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Become a Part of Molly's Dream Team</a></li>-->
+                                            <li id="menu-item-1190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1190"><a><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-5ae11d7bdf6cb" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Become a Part of Molly's Dream Team</a></li> <!--Pop-booking link-->
+                                            <li id="menu-item-495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-495"><a href="contact-us/index.html"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-5ae11d7bdf6cb" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>
+                    <div id="sub-footer">
+                        <div class=" fullwidth-footer">
+                            <span class="mk-footer-copyright">Copyright  All Rights Reserved @ 2018 DreamTeam</span>
+                        </div>
+                        <div class="clearboth"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer id="mk_page_footer">
+        <script type="text/javascript" src="//cdn.callrail.com/companies/245666603/f10f9ee8134b95fce125/12/swap.js"></script>
+        <script type="text/javascript">
+            var _hsq = _hsq || [];
+            _hsq.push(["setContentType", "standard-page"]);
+            (function (d, s, i, r) {
+                if (d.getElementById(i)) { return; }
+                var n = d.createElement(s), e = document.getElementsByTagName(s)[0];
+                n.id = i; n.src = '//js.hs-analytics.net/analytics/' + (Math.ceil(new Date() / r) * r) + '/2383641.js';
+                e.parentNode.insertBefore(n, e);
+            })(document, "script", "hs-analytics", 300000);
+        </script>
+        <!-- End of Async HubSpot Analytics Code -->
+        <script type="text/javascript">
+            php = {
+                hasAdminbar: false,
+                json: (null != null) ? null : "",
+                jsPath: 'wp-content/themes/jupiter/assets/js'
+            };
+        </script><link rel='stylesheet' id='vc_google_fonts_satisfyregular-css' href='//fonts.googleapis.com/css?family=Satisfy%3Aregular&#038;ver=4.9.5' type='text/css' media='all' />
+        <link rel='stylesheet' id='vc_google_fonts_oswald300regular700-css' href='//fonts.googleapis.com/css?family=Oswald%3A300%2Cregular%2C700&#038;ver=4.9.5' type='text/css' media='all' />
+        <script type='text/javascript' src='wp-content/plugins/anti-spam/js/anti-spam-4.2.js'></script>
+        <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+        <script type='text/javascript'>
+            var _wpcf7 = { "loaderUrl": "wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "recaptchaEmpty": "Please verify that you are not a robot.", "sending": "Sending ...", "cached": "1" };
+        </script>
+        <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.4.2'></script>
+        <script type='text/javascript'>
+            var leadin_wordpress = { "userRole": "visitor", "pageType": "home", "leadinPluginVersion": "6.1.2" };
+        </script>
+        <script type='text/javascript' async defer src='//js.hs-scripts.com/2383641.js?ver=4.9.5'></script>
+        <script type='text/javascript' src='wp-content/themes/jupiter/assets/js/plugins/wp-enqueue/smoothscroll.js?ver=1.0'></script>
+        <script type='text/javascript' src='wp-includes/js/comment-reply.min.js?ver=4.9.5'></script>
+        <script type='text/javascript' src='wp-content/themes/jupiter/assets/js/core-scripts.js?ver=1.0'></script>
+        <script type='text/javascript' src='wp-content/plugins/easy-image-gallery/includes/lib/prettyphoto/jquery.prettyPhoto.js?ver=1.1.4'></script>
+        <script type='text/javascript' src='wp-includes/js/wp-embed.min.js?ver=4.9.5'></script>
+        <script type='text/javascript' src='wp-content/plugins/js_composer_theme/assets/js/dist/js_composer_front.min.js?ver=4.12.1'></script>
+        <script type='text/javascript' src='wp-content/uploads/mk_assets/components-production.min.js?ver=1524710065'></script>
+        <script type="text/javascript">
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-79992573-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script type="text/javascript">
+        </script>
+        <script type="text/javascript">
+            window.get = {}; window.get.captcha = function (enteredCaptcha) {
+                return jQuery.get(ajaxurl, { action: "mk_validate_captcha_input", captcha: enteredCaptcha });
+            };</script>
+        <script>
+            (function ($) {
+                var loc = window.location,
+                    hash = loc.hash;
+                if (hash.length && hash.substring(1).length) {
+                    var $topLevelSections = $('.vc_row, .mk-main-wrapper-holder, .mk-page-section, #comments');
+                    var $section = $topLevelSections.filter('#' + hash.substring(1));
+                    if (!$section.length) return;
+                    hash = hash.replace('!loading', '');
+                    var newUrl = hash + '!loading';
+                    loc.hash = newUrl;
+                }
+            }(jQuery));
+        </script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,347 @@
+/*
+Theme Name:     Jupiter Child Theme - Molly's Dream Team
+Theme URI: 		http://themeforest.net/user/artbees
+Description:    Child theme for the Jupiter theme 
+Author:        Marketect
+Author URI: http://marketectu.com/
+Theme URI: 		http://themeforest.net/user/artbees
+Template:       jupiter
+Version:        1.0
+*/
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
+/*-===================HEADER=========================*/
+.b-icon-container{
+    position: absolute;
+    left: 50%;
+	top:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.b-icon-container img{
+	max-width:300px;
+	height:auto;
+	opacity:0.5;
+}
+.header-grid{
+	padding:10px 0;
+}
+.mk-desktop-logo.light-logo {
+    margin-top: 10px;
+    margin-left:50px;
+}
+	/*---------------STICKY HEADER ----------------*/
+.a-sticky .header-grid,.a-sticky .mk-header-bg,.a-sticky .header-logo {
+	padding:10px 0;
+}
+.mk-classic-menu-wrapper aside{
+	padding:10px 0;
+	display:inline-block;
+	vertical-align:top;
+}
+.mk-classic-menu-wrapper .menu-item{
+	font-family: "Oswald";
+}
+.mk-classic-menu-wrapper aside:nth-of-type(1){
+	width: 40%;
+}
+.mk-classic-menu-wrapper aside:nth-of-type(1) img{
+	max-width:100%;
+	max-height:70px;
+}
+
+.a-sticky aside:nth-of-type(1) img{
+	max-height:60px;
+}
+
+.mk-classic-menu-wrapper aside:nth-of-type(2){
+	width: 58%;
+	text-align:right;
+	    margin: 10px 0 0;
+}
+/*.mk-classic-menu-wrapper img{
+	max-width:240px;
+	height:auto;
+}*/
+.home .mk-header .mk-header-bg{
+	background-image:url(../../../../staff/wp-content/uploads/2016/06/BB-header-with-padding.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position-x: 50%;
+	background-position-y: 20%;
+}
+.header-icon-nav{
+	margin-top: 15px;
+	display:inline-block;
+	vertical-align:top;
+}
+.header-icon-nav a{
+	color:#6a7577;
+	margin:0 15px 0 0;
+	line-height:normal;
+}
+.header-icon-nav a:hover{
+	color:#cc3670;
+}
+.header-icon-nav a:last-child{
+	margin:0;
+}
+.a-sticky .header-icon-nav button, .home .header-icon-nav button, .single .header-icon-nav button {
+	color:#6A7577;
+}
+.header-icon-nav button {
+    font-size: 14px;
+    color: #FFF;
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: 5px 15px;
+    background-color: transparent;
+}
+.home .mk-header-nav-container{
+	background-color:rgba(255,255,255,0.75);
+}
+	/*----- FA Icons On Transition ------*/
+.trans-header .bg-true.light-skin:not(.a-sticky) .header-icon-nav a{
+	color:#FFF;
+}
+.trans-header .bg-true.light-skin:not(.a-sticky) a:hover{
+	color:#cc3670;
+}
+/*-===================FOOTER=========================*/
+#mk-footer .widgettitle{
+	font-family: "Oswald";
+}
+#mk-footer #menu-footer-navigation a, #mk-footer #menu-footer-navigation a:visited{
+	color:#859599 !important;
+	font-size:16px;
+	line-height:normal;
+	font-weight:normal;
+}
+ #mk-footer #menu-footer-navigation a:hover{
+	 color:#FFD1D1;
+ }
+#mk-footer #menu-footer-navigation svg{
+	display:none;
+}
+#mk-footer .widget_posts_lists ul li .post-list-title {
+    display: block;
+    font-size: 16px;
+    line-height:normal;
+}
+#mk-footer a > .fa{
+	color:#cc3670;
+}
+#mk-footer a:hover > .fa{
+	color:#6a7577;
+}
+/*-===================NAV=========================*/
+.mk-classic-menu-wrapper{
+}
+.main-navigation-ul>li.menu-item>a.menu-item-link {
+    letter-spacing: -0.02em !important;
+}
+
+/*-=================== HOME =========================*/
+.home .add-header-height{
+	height:350px;
+    line-height:350px;
+}
+.home .header-logo img{
+	display:none;
+}
+	/*------------> Portfolio Grid VC Module <------------------*/
+.mk-portfolio-item.cube-hover .the-title{
+	font-family: "Open Sans";
+}
+.mk-portfolio-item.cube-hover .portfolio-meta{
+	background:#58b7cb;
+}
+/*-=================== INTERIOR PAGES =========================*/
+
+/*-=================== BLOG =========================*/
+.mk-blog-meta-wrapper{
+	display:none;
+}
+.mk-blog-thumbnail-item.content-align-right .item-wrapper {
+    padding: 0 30px 15px;
+}
+.mk-blog-modern-item a{
+	font-weight:normal !important;
+}
+.single .theme-content ul, .single .theme-content ol{
+	font-weight:200;
+}
+.single .theme-content ul{
+	list-style-type:disc;
+}
+.mk-author-avatar{
+	display:none;
+}
+/*========================== TEXT ====================================*/
+.theme-content ul{
+	list-style-type:none;
+}
+.mk-clients ul > li:before{
+	display:none !important;
+}
+.theme-content .mk-text-block  ul > li:before{
+	color:#58b7cb;
+	content:'\f198';
+	font-family:FontAwesome;
+	display:inline-block;
+	margin-left:-1.2em;
+	width:1.2em;
+}
+blockquote, blockquote p{
+	background:#FFF;
+	font-size:24px;
+	color:#58b7cb;
+	font-family: 'Satisfy', cursive;
+}
+blockquote p:before {
+	font-size:40px;
+	color:#ffd1d1;
+	content: '\f10d';
+	font-family: FontAwesome;
+	display: inline-block;
+	width: 1.2em;
+	float:left;
+	line-height:30pt;
+}
+blockquote svg{
+	display:none;
+}
+.satisfy{
+	font-family: 'Satisfy', cursive;
+}
+.blue{
+	color:#58b7cb;
+}
+.pink{
+	color:#CC3670;
+}
+.darkgray{
+	color:#6a7577;
+}
+.gray{
+	color:#859599;
+}
+#drop-caps-9 {
+    font-size: 35px !important;
+}
+/*========================== LINKS ====================================*/
+a{
+	font-weight:700;
+	transition:0.5s ease all;
+}
+.theme-page-wrapper a .fa{
+	color:#CB3670;
+}
+.theme-page-wrapper a:hover .fa{
+	color:#6A7577;
+}
+/*========================== FORMS ====================================*/
+input[type=emailModern], input[type=email], input[type=password], input[type=search], input[type=tel], input[type=text], textarea {
+    border: 1px solid #797979;
+    transition: 0.5s all ease;
+    display: inline-block;
+    width: 90%;
+    max-width: 500px;
+    /*height: 40px;*/
+    padding: 9px 10px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #33475b;
+    background-color: #f5f8fa;
+    border: 1px solid #cbd6e2;
+    box-sizing: border-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px
+}
+.bestie-button, .mk-blog-meta .mk-button{
+    color: #FFF !important;
+	font-weight:normal !important;
+	border:1px solid rgba(0, 0, 0, 0.2);
+	border-radius:3px;
+	padding: 20px 28px;
+    font-size: 14px;
+    line-height: 100%;
+    background: -webkit-linear-gradient(bottom left,#cb4178 0%, #67b9ce 100%);
+    background: linear-gradient(to top right,#cb4178 0%, #67b9ce 100%);
+	margin:5% 0;
+	transition:0.5s linear all;
+}
+.bestie-button:hover, .mk-blog-meta .mk-button:hover{
+	background: -webkit-linear-gradient(bottom left,#67b9ce 0%, #cb4178 100%);
+    background: linear-gradient(to top right,#67b9c 0%, #cb4178 100%);
+}
+::-webkit-input-placeholder{
+	font-size:16px;
+	color:#cb3670;
+}
+::-moz-input-placeholder{
+	font-size:16px;
+	color:#cb3670;
+}
+:-ms-input-placeholder{
+	font-size:16px;
+	color:#cb3670;
+}
+input[type=number]{
+	font-size: 13px;
+    color: #767676;
+    padding: 10px 12px;
+    background-color: #fdfdfd;
+    border: 1px solid #e3e3e3;
+    outline: 0;
+    margin-bottom: 4px;
+}
+.mk-quick-contact-wrapper p{
+	font-size:14px !important;
+}
+.contact-form-message {
+    padding: 5px 0 !important;
+}
+@media screen and (min-width:960px){
+.home #theme-page {
+    margin: 280px 0 0;
+}
+}
+@media screen and (max-width:959px){
+.home .mk-css-icon-close div,.home .mk-css-icon-menu div{
+	background-color:#FFF;
+}
+.home .mobile-align-right .mk-nav-responsive-link{
+	background-color:#6A7577;
+}
+}
+@media screen and (min-width:569px) and (max-width:959px){
+		.b-icon-container img{
+	max-width:100px;
+}
+}
+
+@media screen and (max-width:959px){
+	.fit-logo-img a {
+    display: block;
+	margin-left:2%;
+	}
+.b-icon-container {
+    transform: translateX(-50%) translateY(-40%);
+}
+
+.mk-nav-responsive-link {
+    z-index: 1000000000000000000000;
+}
+}
+@media screen and (max-width:568px){
+.header-logo img{
+	max-width:140px !important;
+}
+.b-icon-container img{
+	max-width:70px;
+}
+}
